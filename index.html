@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./plugin/css.css">
+  <link rel="stylesheet" href="./plugin/bootstrap.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/65952ca494.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <!-- <header class="bg-dark fixed-top" id="header">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <h3 class="navbar-brand" onclick="toTop()">Jim's Website</h3>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active text-right">
+            <a class="nav-link" onclick="toSection2()">Personal Info <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item text-right">
+            <a class="nav-link" href="#">Favorite Quotes</a>
+          </li>
+          <li class="nav-item text-right">
+            <a class="nav-link" href="#">Experience</a>
+          </li>
+          <li class="nav-item text-right">
+            <a class="nav-link" href="#">Skills and Expertise</a>
+          </li>
+          <li class="nav-item text-right">
+            <a class="nav-link" href="#">Design Portfolio</a>
+          </li>
+          <li class="nav-item dropdown text-right">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Administrator
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item text-center" href="#">Log-in <i class="fas fa-sign-in-alt"></i></a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header> -->
+
+  <!-- Introduce -->
+  <section id="section1" class="d-flex text-light position-relative">
+    <div class="container m-auto">
+      <div>
+        <p class=><span class="text-warning">echo　</span>Hi！I am <span class="myName">Jimmy</span>.</p>
+        <p class=><span class="text-warning">echo　</span>This is my introduing page.</p>
+        <p class=><span class="text-warning">echo　</span>Thank you for browsing</p>
+        <p class=><span class="text-warning">echo　</span>and hoping you like it.</p>
+        <p class=><span class="text-warning">print_r（</span>Menu<span class="text-warning">）</span></p>
+      </div>
+      <div>
+        <p class=><span class="text-white">Array</span></p>
+        <p class=><span class="text-white">　　[0] => </span> <a class="menuArray" onclick="toSection2()">Personal
+            Info</a></p>
+        <p class=><span class="text-white">　　[1] => </span> <a class="menuArray" href="#">Favorite Quotes</a></p>
+        <p class=><span class="text-white">　　[2] => </span> <a class="menuArray" href="#">Experience</a></p>
+        <p class=><span class="text-white">　　[3] => </span> <a class="menuArray" href="#">Skills and Expertise</a></p>
+        <p class=><span class="text-white">　　[4] => </span> <a class="menuArray" href="#">Design Portfolio</a></p>
+      </div>
+    </div>
+    <div class="position-absolute clickandGo">
+      <p class=><span class="text-white">　　Click & Go --></p>
+    </div>
+    <div class="position-absolute downArrow">
+      <i class="fas fa-angle-double-down fa-3x" onclick="toSection2()"></i>
+    </div>
+  </section>
+
+  <!-- Personal Info -->
+  <section id="section2" class="">
+    <h1 class="py-3 text-center">Personal Info</h1>
+    <div class="col-12" id="myPic"></div>
+
+
+  </section>
+
+
+  <script src="plugin/js.js"></script>
+</body>
+
+</html>

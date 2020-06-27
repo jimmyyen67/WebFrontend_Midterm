@@ -1,0 +1,102 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  scroll-behavior: smooth;
+  transition: 0.5s;
+}
+/* header {
+  height: 60px;
+  background-color: transparent !important;
+} */
+#section1 {
+  height: 100vh;
+  background-color: #2d3436;
+  font-size: large;
+  font-family: monospace;
+}
+.myName {
+  font-size: x-large;
+  font-weight: 700;
+  text-decoration: underline;
+}
+.menuArray {
+  font-weight: 600;
+  padding: 1px 10px 1px;
+  background-color: rgba(100, 100, 100, 0.5);
+}
+.menuArray:active {
+  color: #fff;
+}
+.menuArray:hover {
+  color: #fff;
+  background-color: rgba(150, 150, 150, 0.7);
+  font-weight: bolder;
+}
+.menuArray:visited {
+  color: #fff;
+}
+.menuArray:focus {
+  color: #fff;
+}
+.clickandGo {
+  bottom: 4%;
+  left: -2%;
+  animation: clickandGo 0.5s ease-in-out infinite;
+}
+@keyframes clickandGo {
+  from,
+  to {
+    left: -2%;
+  }
+  50% {
+    left: 0%;
+  }
+}
+.downArrow {
+  bottom: 5%;
+  left: 50%;
+  color: #ffeaa7;
+  text-shadow: 0 0 5px #fdcb6e;
+  transform: translate(-50%, 0%);
+  animation: downArrow 1s ease-in-out infinite;
+}
+.downArrow:focus,
+.downArrow:hover {
+  text-shadow: 0 0 25px #fdcb6e;
+}
+@keyframes downArrow {
+  from,
+  to {
+    bottom: 5%;
+  }
+  50% {
+    bottom: 3%;
+  }
+}
+
+@media screen and (min-width:1030px) {
+  #section1 .container {
+    display: flex !important;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: x-large;
+  }
+  .downArrow {
+    transform: scale(2);
+    margin-bottom: 3%;
+  }
+  .clickandGo {
+    display: none;
+  }
+  .menuArray {
+    word-wrap: unset;
+  }
+}
+
+#section2 {
+  height: 100vh;
+}
+#myPic {
+  border-radius: 50%;
+  background-image: url("../images/head.jpg");
+}
