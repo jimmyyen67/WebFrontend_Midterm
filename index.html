@@ -27,19 +27,19 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item text-right">
-            <a class="nav-link" onclick="toSection2()">Personal Info</a>
+            <a class="nav-link" href="#section2">Personal Info</a>
           </li>
           <li class="nav-item text-right">
-            <a class="nav-link" onclick="toSection3()">Favorite Quotes</a>
+            <a class="nav-link" href="#section3">Favorite Quotes</a>
           </li>
           <li class="nav-item text-right">
-            <a class="nav-link" href="#">Experience</a>
+            <a class="nav-link" href="#section4">Experience</a>
           </li>
           <li class="nav-item text-right">
-            <a class="nav-link" href="#">Skills and Expertise</a>
+            <a class="nav-link" href="#section5">Skills and Expertise</a>
           </li>
           <li class="nav-item text-right">
-            <a class="nav-link" href="#">Design Portfolio</a>
+            <a class="nav-link" href="#section6">Design Portfolio</a>
           </li>
           <li class="nav-item dropdown text-right">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
@@ -68,10 +68,10 @@
       <div>
         <p><span class="text-white">Array</span></p>
         <p><span class="text-white">　　[0] => </span> <a class="menuArray" href="#section2">Personal Info</a></p>
-        <p><span class="text-white">　　[1] => </span> <a class="menuArray" href="#">Favorite Quotes</a></p>
-        <p><span class="text-white">　　[2] => </span> <a class="menuArray" href="#">Experience</a></p>
-        <p><span class="text-white">　　[3] => </span> <a class="menuArray" href="#">Skills and Expertise</a></p>
-        <p><span class="text-white">　　[4] => </span> <a class="menuArray" href="#">Design Portfolio</a></p>
+        <p><span class="text-white">　　[1] => </span> <a class="menuArray" href="#section3">Favorite Quotes</a></p>
+        <p><span class="text-white">　　[2] => </span> <a class="menuArray" href="#section4">Experience</a></p>
+        <p><span class="text-white">　　[3] => </span> <a class="menuArray" href="#section5">Skills and Expertise</a></p>
+        <p><span class="text-white">　　[4] => </span> <a class="menuArray" href="#section6">Design Portfolio</a></p>
       </div>
       <div class="position-absolute downArrow">
         <i class="fas fa-angle-double-down fa-3x" onclick="toSection2()"></i>
@@ -157,22 +157,25 @@
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img src="./images/adler.jpeg" class=" carouselImg d-block w-50 m-auto" alt="...">
-          <h5 class="m-auto text-center text-light">“Follow your heart but take your brain with you.” <span>― Alfred
+          <h5 class="mr-auto ml-auto text-center text-light">“Follow your heart but take your brain with you.” <span>―
+              Alfred
               Adler</span></h5>
         </div>
         <div class="carousel-item">
           <img src="./images/socrates.jpg" class=" carouselImg d-block w-50 m-auto" alt="...">
-          <h5 class="m-auto text-center text-light">“The only true wisdom is in knowing you know nothing.” <span>―
+          <h5 class="mr-auto ml-auto text-center text-light">“The only true wisdom is in knowing you know nothing.”
+            <span>―
               Socrates</span></h5>
         </div>
         <div class="carousel-item">
           <img src="./images/Mandela.jpeg" class=" carouselImg d-block w-50 m-auto" alt="...">
-          <h5 class="m-auto text-center text-light">“Education is the most powerful weapon which you can use to change
+          <h5 class="mr-auto ml-auto text-center text-light">“Education is the most powerful weapon which you can use to
+            change
             the world.” <span>― Nelson Mandela</span></h5>
         </div>
         <div class="carousel-item">
           <img src="./images/Confucius.jpg" class=" carouselImg d-block w-50 m-auto" alt="...">
-          <h5 class="m-auto text-center text-light">“Man who want pretty nurse. Must be patient.” <span>―
+          <h5 class="mr-auto ml-auto text-center text-light">“Man who want pretty nurse. Must be patient.” <span>―
               Confucius</span></h5>
         </div>
       </div>
@@ -185,6 +188,11 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="section4">
+    <h1 class="m-auto py-5 text-center text-dark">Experience</h1>
   </section>
 
   <script src="plugin/js.js"></script>

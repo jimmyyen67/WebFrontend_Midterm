@@ -115,8 +115,11 @@
   color: #4b4b4b;
 }
 .carouselImg{
-height:60vh;
-width: auto;
+height:auto;
+width: 50vw;
+}
+#section4{
+  height:100vh;
 }
 
 
@@ -162,4 +165,11 @@ width: auto;
     color: white;
     transition: 0.3s;
   }
+  #section3{
+    height: 100vh;
+  }
+  .carouselImg{
+    height:auto;
+    width: 70vw;
+    }
 }
