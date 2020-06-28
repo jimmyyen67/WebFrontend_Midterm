@@ -12,18 +12,12 @@
   transition: 1s;
 }
 .nav-transparent {
+  background: transparent;
+  top: -0.9rem;
   transition: 1s;
-  background: transparent;
-  top: -.5rem;
 }
-.brand-colored {
-  background: transparent;
-  transition: 0.3s;
-}
-.brand-transparent {
-  transition: 0.3s;
-  background: #1e272e88;
-  padding: 0px 15px;
+.navbar-brand {
+  cursor: pointer;
 }
 .nav-link {
   cursor: pointer;
@@ -74,16 +68,19 @@
 
 .downArrow {
   bottom: 3%;
-  right: 3%;
+  right: 5%;
   color: #ffeaa7;
   text-shadow: 0 0 5px #fdcb6e;
   transform: translate(-50%, 0%);
   animation: downArrow 1s ease-in-out infinite;
 }
+
 .downArrow:focus,
-.downArrow:hover {
+.downArrow:hover,
+.downArrow:active {
   text-shadow: 0 0 25px #fdcb6e;
 }
+
 @keyframes downArrow {
   from,
   to {
@@ -109,6 +106,20 @@
 .bold {
   font-weight: bold;
 }
+#section3{
+  height: 100vh;
+  background: #1e272e;
+}
+#section3 h1,
+#section3 h3 {
+  color: #4b4b4b;
+}
+.carouselImg{
+height:60vh;
+width: auto;
+}
+
+
 @media screen and (min-width: 1030px) {
   #section1 {
     height: 100vh;

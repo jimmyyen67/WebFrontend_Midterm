@@ -1,6 +1,8 @@
 function toSection2() {
   document.getElementById("section2").scrollIntoView();
-  document.getElementById("navbarSupportedContent").style.height = "0";
+}
+function toSection3() {
+  document.getElementById("section3").scrollIntoView();
 }
 function toTop() {
   $(window).scrollTop(0);
