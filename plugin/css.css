@@ -10,9 +10,22 @@
 } */
 #section1 {
   height: 100vh;
+  background-image: url(../images/bg-sm.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: #2d3436;
   font-size: large;
   font-family: monospace;
+}
+.startTalk {
+  position: relative;
+}
+.startTalk::before {
+  position: absolute;
+  content: "";
+  height: 1.5rem;
+  width: 20rem;
+  background: rgba(178, 190, 195, 0.1);
 }
 .myName {
   font-size: x-large;
@@ -74,12 +87,21 @@
   }
 }
 
-@media screen and (min-width:1030px) {
+@media screen and (min-width: 1030px) {
+  #section1 {
+    background-image: url(../images/bg-md.jpg);
+  }
   #section1 .container {
     display: flex !important;
     justify-content: space-evenly;
     align-items: center;
     font-size: x-large;
+  }
+  .startTalk {
+    background-color: rgba(45, 52, 54, 0.7);
+  }
+  .startTalk::before {
+    display: none;
   }
   .downArrow {
     transform: scale(2);
@@ -89,7 +111,13 @@
     display: none;
   }
   .menuArray {
-    word-wrap: unset;
+    cursor: pointer;
+  }
+  #section2 .d-flex {
+    flex-flow: row nowrap !important;
+  }
+  #section2 .card {
+    min-width: fit-content;
   }
 }
 
@@ -99,4 +127,10 @@
 #myPic {
   border-radius: 50%;
   background-image: url("../images/head.jpg");
+}
+.fas::before {
+  padding: 10%;
+}
+.bold {
+  font-weight: bold;
 }
