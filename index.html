@@ -27,19 +27,19 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item text-right">
-            <a class="nav-link" href="#section2">Personal Info</a>
+            <a class="nav-link" onclick="toSection2()">Personal Info</a>
           </li>
           <li class="nav-item text-right">
-            <a class="nav-link" href="#section3">Favorite Quotes</a>
+            <a class="nav-link" onclick="toSection3()">Favorite Quotes</a>
           </li>
           <li class="nav-item text-right">
-            <a class="nav-link" href="#section4">Experience</a>
+            <a class="nav-link" onclick="toSection4()">Experience</a>
           </li>
           <li class="nav-item text-right">
-            <a class="nav-link" href="#section5">Skills and Expertise</a>
+            <a class="nav-link" onclick="toSection5()">Skills and Expertise</a>
           </li>
           <li class="nav-item text-right">
-            <a class="nav-link" href="#section6">Design Portfolio</a>
+            <a class="nav-link" onclick="toSection6()">Design Portfolio</a>
           </li>
           <li class="nav-item dropdown text-right">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
@@ -59,19 +59,21 @@
   <section id="section1" class="d-flex text-light position-relative">
     <div class="container m-auto">
       <div>
-        <p class="startTalk"><span class="text-warning">echo　</span>Hi！I am <span class="myName">Jimmy</span>.</p>
-        <p class="startTalk"><span class="text-warning">echo　</span>This is my introduing page.</p>
-        <p class="startTalk"><span class="text-warning">echo　</span>Thank you for browsing</p>
-        <p class="startTalk"><span class="text-warning">echo　</span>and hoping you like it.</p>
-        <p class="startTalk"><span class="text-warning">print_r（</span>Menu<span class="text-warning">）</span></p>
+        <h6 class="startTalk my-7"><span class="text-warning">echo　</span>Hi！I am <span class="myName">Jimmy</span>.
+        </h6>
+        <h6 class="startTalk my-4"><span class="text-warning">echo　</span>This is my introduing page.</h6>
+        <h6 class="startTalk my-4"><span class="text-warning">echo　</span>Thank you for browsing.</h6>
+        <h6 class="startTalk my-4"><span class="text-warning">echo　</span>and hoping you like it.</h6>
+        <h6 class="startTalk my-4"><span class="text-warning">print_r（</span>Menu<span class="text-warning">）</span>
+        </h6>
       </div>
-      <div>
+      <div class="arrayBlock">
         <p><span class="text-white">Array</span></p>
-        <p><span class="text-white">　　[0] => </span> <a class="menuArray" href="#section2">Personal Info</a></p>
-        <p><span class="text-white">　　[1] => </span> <a class="menuArray" href="#section3">Favorite Quotes</a></p>
-        <p><span class="text-white">　　[2] => </span> <a class="menuArray" href="#section4">Experience</a></p>
-        <p><span class="text-white">　　[3] => </span> <a class="menuArray" href="#section5">Skills and Expertise</a></p>
-        <p><span class="text-white">　　[4] => </span> <a class="menuArray" href="#section6">Design Portfolio</a></p>
+        <p><span class="text-white">　　[0] => </span> <a class="menuArray" onclick="toSection2()">Personal Info</a></p>
+        <p><span class="text-white">　　[1] => </span> <a class="menuArray" onclick="toSection3()">Favorite Quotes</a></p>
+        <p><span class="text-white">　　[2] => </span> <a class="menuArray" onclick="toSection4()">Experience</a></p>
+        <p><span class="text-white">　　[3] => </span> <a class="menuArray" onclick="toSection5()">Skills and Expertise</a></p>
+        <p><span class="text-white">　　[4] => </span> <a class="menuArray" onclick="toSection6()">Design Portfolio</a></p>
       </div>
       <div class="position-absolute downArrow">
         <i class="fas fa-angle-double-down fa-3x" onclick="toSection2()"></i>

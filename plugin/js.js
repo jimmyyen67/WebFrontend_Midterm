@@ -4,6 +4,9 @@ function toSection2() {
 function toSection3() {
   document.getElementById("section3").scrollIntoView();
 }
+function toSection4() {
+  document.getElementById("section4").scrollIntoView();
+}
 function toTop() {
   $(window).scrollTop(0);
 }

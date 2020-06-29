@@ -3,10 +3,7 @@
   padding: 0px;
   scroll-behavior: smooth;
 }
-/* header {
-  height: 60px;
-  background-color: transparent !important;
-} */
+
 .nav-colored {
   background: #1e272e;
   transition: 1s;
@@ -33,23 +30,57 @@
 }
 .startTalk {
   position: relative;
+  width: fit-content;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 0.15em solid orange;
+  width: fit-content;
+  animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
 }
-.startTalk::before {
-  position: absolute;
-  content: "";
-  height: 1.5rem;
-  width: 20rem;
-  background: rgba(178, 190, 195, 0.1);
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 1%;
+  }
+  to {
+    width: 100%;
+  }
 }
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+.arrayBlock {
+  animation: show 3.5s step-end forwards;
+}
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .myName {
   font-size: x-large;
   font-weight: 700;
   text-decoration: underline;
 }
 .menuArray {
+  color: #fff;
   font-weight: 600;
   padding: 1px 10px 1px;
-  background-color: rgba(100, 100, 100, 0.5);
+  background-color: rgba(100, 100, 100, 0.7);
+  letter-spacing: 0.15em;
+  text-decoration: underline;
 }
 .menuArray:active {
   color: #fff;
@@ -58,6 +89,7 @@
   color: #fff;
   background-color: rgba(150, 150, 150, 0.7);
   font-weight: bolder;
+  text-decoration: underline;
 }
 .menuArray:visited {
   color: #fff;
@@ -106,7 +138,7 @@
 .bold {
   font-weight: bold;
 }
-#section3{
+#section3 {
   height: 100vh;
   background: #1e272e;
 }
@@ -114,14 +146,13 @@
 #section3 h3 {
   color: #4b4b4b;
 }
-.carouselImg{
-height:auto;
-width: 50vw;
+.carouselImg {
+  height: auto;
+  width: 50vw;
 }
-#section4{
-  height:100vh;
+#section4 {
+  height: 100vh;
 }
-
 
 @media screen and (min-width: 1030px) {
   #section1 {
@@ -135,11 +166,16 @@ width: 50vw;
     font-size: x-large;
   }
   .startTalk {
-    background-color: rgba(45, 52, 54, 0.7);
+    transform: scale(1.3);
+    width: fit-content;
+    letter-spacing: 0.15em;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 0.15em solid orange;
+    width: fit-content;
+    animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
   }
-  .startTalk::before {
-    display: none;
-  }
+
   .downArrow {
     transform: scale(2);
     margin-bottom: 3%;
@@ -165,11 +201,11 @@ width: 50vw;
     color: white;
     transition: 0.3s;
   }
-  #section3{
+  #section3 {
     height: 100vh;
   }
-  .carouselImg{
-    height:auto;
+  .carouselImg {
+    height: auto;
     width: 70vw;
-    }
+  }
 }
