@@ -10,7 +10,6 @@
 }
 .nav-transparent {
   background: transparent;
-  top: -0.9rem;
   transition: 1s;
 }
 .navbar-brand {
@@ -153,11 +152,21 @@
 #section4 {
   height: 100vh;
 }
-
+.workex{
+  border:1px solid white;
+}
+.workex:hover {
+  transform: scale(1.1);
+  border: 2px solid #ffeaa7;
+  transition: 0.2s;
+}
 @media screen and (min-width: 1030px) {
   #section1 {
     height: 100vh;
     background-image: url(../images/bg-md.jpg);
+  }
+  .nav-transparent {
+    top: -0.7rem;
   }
   #section1 .container {
     display: flex !important;
@@ -166,7 +175,6 @@
     font-size: x-large;
   }
   .startTalk {
-    transform: scale(1.3);
     width: fit-content;
     letter-spacing: 0.15em;
     white-space: nowrap;

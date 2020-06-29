@@ -20,12 +20,8 @@ window.onscroll = function () {
     ) {
       navbar.classList.add("nav-transparent");
       navbar.classList.remove("nav-colored");
-      navbarbrand.classList.add("brand-transparent");
-      navbarbrand.classList.remove("brand-colored");
   } else {
     navbar.classList.add("nav-colored");
     navbar.classList.remove("nav-transparent");
-    navbarbrand.classList.add("brand-colored");
-    navbarbrand.classList.remove("brand-transparent");
   }
 };
