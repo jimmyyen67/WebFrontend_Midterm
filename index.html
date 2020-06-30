@@ -33,13 +33,10 @@
             <a class="nav-link" onclick="toSection2()">Personal Info</a>
           </li>
           <li class="nav-item text-right">
-            <a class="nav-link" onclick="toSection3()">Experience</a>
+            <a class="nav-link" onclick="toSection3()">Skills and Expertise</a>
           </li>
           <li class="nav-item text-right">
-            <a class="nav-link" onclick="toSection4()">Skills and Expertise</a>
-          </li>
-          <li class="nav-item text-right">
-            <a class="nav-link" onclick="toSection5()">Design Portfolio</a>
+            <a class="nav-link" onclick="toSection4()">Design Portfolio</a>
           </li>
           <li class="nav-item dropdown text-right">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
@@ -70,10 +67,9 @@
       <div class="arrayBlock">
         <p><span class="text-white">Array</span></p>
         <p><span class="text-white">　　[0] => </span> <a class="menuArray" onclick="toSection2()">Personal Info</a></p>
-        <p><span class="text-white">　　[1] => </span> <a class="menuArray" onclick="toSection3()">Experience</a></p>
-        <p><span class="text-white">　　[2] => </span> <a class="menuArray" onclick="toSection4()">Skills and
+        <p><span class="text-white">　　[2] => </span> <a class="menuArray" onclick="toSection3()">Skills and
             Expertise</a></p>
-        <p><span class="text-white">　　[3] => </span> <a class="menuArray" onclick="toSection5()">Design Portfolio</a>
+        <p><span class="text-white">　　[3] => </span> <a class="menuArray" onclick="toSection4()">Design Portfolio</a>
         </p>
       </div>
       <div class="position-absolute downArrow">
@@ -147,38 +143,76 @@
     </div>
   </section>
 
-  <!-- Experience -->
+  <!-- Skills and Expertise -->
   <section id="section3">
-    <h1 class="m-auto pt-5 pb-3 text-center text-white">Experience</h1>
+    <h1 class="py-5 text-center text-light">Skills and Expertise</h1>
     <div class="container">
-      <div class="row text-light">
-        <div class="workex col-12 col-lg-4 mb-3 m-lg-auto">
-          <p class="m-auto h3 py-2">LeadMaker 動文創</p>
-          <p>Jan,2019 ~ Jan, 2020</p>
-          <p>職稱：英文專員</p>
-          <p>1.體適能證照課程主辦</p>
-          <p>2.英文書信處理</p>
-          <p>3.原文資料翻譯</p>
-          <p>4.粉絲專業經營/訊息回覆</p>
+      <div class="row">
+        <div class="col-12 col-lg-3 card bg-dark text-light" style="width: 18rem;">
+          <img src="./images/logo-html.png" class="card-img-top" alt="HTML" title="HTML">
+          <div class="card-body">
+            <h3>HTML</h3>
+            <p class="card-text">HTML 是基礎網頁技術，網頁瀏覽器可以讀取 HTML 檔案，成為視覺化網頁。</p>
+          </div>
         </div>
-        <div class="workex col-12 col-lg-4 m-lg-auto">
-          <p class="m-auto h3 py-2">新北市立聯合醫院</p>
-          <p>Jun, 2015 ~ Dec, 2015</p>
-          <p>職稱：約用人事專員</p>
-          <p>1.履歷審閱/面試邀約</p>
-          <p>2.報到/離職流程辦理</p>
-          <p>3.健保/勞保/公保</p>
-          <p>4.薪資/獎金計算</p>
+        <div class="col-12 col-lg-3 card bg-dark text-light" style="width: 18rem;">
+          <img src="./images/logo-css.png" class="card-img-top" alt="CSS" title="CSS">
+          <div class="card-body">
+            <h3>CSS</h3>
+            <p class="card-text">CSS 網頁樣式表，可彈性自定變化網頁元素顯示樣貌，節省工作時間。</p>
+          </div>
+        </div>
+        <div class="col-12 col-lg-3 card bg-dark text-light" style="width: 18rem;">
+          <img src="./images/logo-js.png" class="card-img-top" alt="JavaScript" title="JavaScript">
+          <div class="card-body">
+            <h3>JavaScript</h3>
+            <p class="card-text">JavaScript 是最流行的腳本語言，能在靜態頁面上添加一些動態效果。</p>
+          </div>
+        </div>
+        <div class="col-12 col-lg-3 card bg-dark text-light" style="width: 18rem;">
+          <img src="./images/logo-jquery.png" class="card-img-top" alt="jQuery" title="jQuery">
+          <div class="card-body">
+            <h3>jQuery</h3>
+            <p class="card-text">以 JS 為基礎的函式庫，號稱能讓開發者能寫的少，做的多！</p>
+          </div>
+        </div>
+        <div class="col-12 col-lg-3 card bg-dark text-light" style="width: 18rem;">
+          <img src="./images/logo-bootstrap.png" class="card-img-top" alt="Bootstrap" title="Bootstrap">
+          <div class="card-body">
+            <h3>Bootstrap</h3>
+            <p class="card-text">熱門的前端框架工具，用於設計響應式網站、排版、格式和介面。</p>
+          </div>
+        </div>
+        <div class="col-12 col-lg-3 card bg-dark text-light" style="width: 18rem;">
+          <img src="./images/logo-ps.png" class="card-img-top" alt="Pgotoshop" title="Pgotoshop">
+          <div class="card-body">
+            <h3>Pgotoshop</h3>
+            <p class="card-text">學習影像處理的主流軟體，用於規劃網頁版面或編修圖片應用。</p>
+          </div>
+        </div>
+        <div class="col-12 col-lg-3 card bg-dark text-light" style="width: 18rem;">
+          <img src="./images/logo-ai.png" class="card-img-top" alt="Illustrator" title="Illustrator">
+          <div class="card-body">
+            <h3>Illustrator</h3>
+            <p class="card-text">熟悉貝茲曲線運用，不失真的向量圖形格式，廣泛的應用在網頁等設計。</p>
+          </div>
+        </div>
+        <div class="col-12 col-lg-3 card bg-dark text-light" style="width: 18rem;">
+          <img src="./images/logo-git.png" class="card-img-top" alt="Git" title="Git">
+          <div class="card-body">
+            <h3>Git</h3>
+            <p class="card-text">Git 為分散式版本控制系統，可以把檔案的狀態作為更新歷史記錄保存起來。</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Skills and Expertise -->
-  <section id="section4" class="vh-100">
-
+  <!-- Design Protfolio -->
+  <section class="section4">
+    <h1 class="py-5 text-center text-light">Design Protfolio</h1>
+    
   </section>
-
   <script src="plugin/js.js"></script>
 </body>
 

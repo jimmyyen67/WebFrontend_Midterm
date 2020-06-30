@@ -6,11 +6,11 @@
 
 .nav-colored {
   background: #1e272e;
-  transition: 1s;
+  transition: all 1s ease-in-out;
 }
 .nav-transparent {
   background: transparent;
-  transition: 1s;
+  transition: all 1s ease-in-out;
 }
 .navbar-brand {
   cursor: pointer;
@@ -138,28 +138,10 @@
   font-weight: bold;
 }
 #section3 {
-  height: 100vh;
+  height: fit-content;
   background: #1e272e;
 }
-#section3 h1,
-#section3 h3 {
-  color: #4b4b4b;
-}
-.carouselImg {
-  height: auto;
-  width: 50vw;
-}
-#section4 {
-  height: 100vh;
-}
-.workex{
-  border:1px solid white;
-}
-.workex:hover {
-  transform: scale(1.1);
-  border: 2px solid #ffeaa7;
-  transition: 0.2s;
-}
+
 @media screen and (min-width: 1030px) {
   #section1 {
     height: 100vh;
@@ -207,13 +189,12 @@
     transform: scale(1.1);
     background-color: #1e272e;
     color: white;
-    transition: 0.3s;
+    transition: all 0.5s ease-in-out;
   }
   #section3 {
-    height: 100vh;
+    height: calc(100vh + 5px);
   }
-  .carouselImg {
-    height: auto;
-    width: 70vw;
+  #section3 > .card {
+    height: fit-content;
   }
 }
