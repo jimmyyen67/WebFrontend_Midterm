@@ -103,6 +103,7 @@
   color: #ffeaa7;
   text-shadow: 0 0 5px #fdcb6e;
   transform: translate(-50%, 0%);
+  cursor:pointer;
   animation: downArrow 1s ease-in-out infinite;
 }
 
