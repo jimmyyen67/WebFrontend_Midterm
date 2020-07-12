@@ -6,11 +6,11 @@
 
 .nav-colored {
   background: #1e272e;
-  transition: 1s;
+  transition: all 1s ease-in-out;
 }
 .nav-transparent {
   background: transparent;
-  transition: 1s;
+  transition: all 1s ease-in-out;
 }
 .navbar-brand {
   cursor: pointer;
@@ -103,7 +103,7 @@
   color: #ffeaa7;
   text-shadow: 0 0 5px #fdcb6e;
   transform: translate(-50%, 0%);
-  cursor:pointer;
+  cursor: pointer;
   animation: downArrow 1s ease-in-out infinite;
 }
 
@@ -139,28 +139,10 @@
   font-weight: bold;
 }
 #section3 {
-  height: 100vh;
+  min-height: fit-content;
   background: #1e272e;
 }
-#section3 h1,
-#section3 h3 {
-  color: #4b4b4b;
-}
-.carouselImg {
-  height: auto;
-  width: 50vw;
-}
-#section4 {
-  height: 100vh;
-}
-.workex{
-  border:1px solid white;
-}
-.workex:hover {
-  transform: scale(1.1);
-  border: 2px solid #ffeaa7;
-  transition: 0.2s;
-}
+
 @media screen and (min-width: 1030px) {
   #section1 {
     height: 100vh;
@@ -208,13 +190,23 @@
     transform: scale(1.1);
     background-color: #1e272e;
     color: white;
-    transition: 0.3s;
+    transition: all 0.5s ease-in-out;
   }
   #section3 {
-    height: 100vh;
+    height: fit-content;
+    min-height: fit-content;
   }
-  .carouselImg {
-    height: auto;
-    width: 70vw;
+  #section3 .container .row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+  }
+  .section4 {
+    height: fit-content;
+    background: linear-gradient(180deg, #1e272e, #d2dae2);
+  }
+  .section4 .container .row{
+    display:flex;
+    justify-content: space-evenly;
   }
 }
