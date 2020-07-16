@@ -142,6 +142,10 @@
   min-height: fit-content;
   background: #1e272e;
 }
+.section4 {
+  height: fit-content;
+  background: linear-gradient(180deg, #1e272e, #d2dae2);
+}
 
 @media screen and (min-width: 1030px) {
   #section1 {
