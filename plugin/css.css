@@ -146,7 +146,9 @@
   height: fit-content;
   background: linear-gradient(180deg, #1e272e, #d2dae2);
 }
-
+li {
+  list-style: none;
+}
 @media screen and (min-width: 1030px) {
   #section1 {
     height: 100vh;
@@ -180,15 +182,15 @@
     cursor: pointer;
   }
   #section2 {
-    height: 100vh;
+    height: 60vh;
   }
   #section2 .d-flex {
     flex-flow: row nowrap !important;
     justify-content: center;
   }
   #section2 .card {
+    width: 300px;
     min-width: fit-content;
-    max-width: fit-content;
   }
   #section2 .card:hover {
     transform: scale(1.1);
@@ -209,8 +211,23 @@
     height: fit-content;
     background: linear-gradient(180deg, #1e272e, #d2dae2);
   }
-  .section4 .container .row{
-    display:flex;
+  .section4 .container .row {
+    display: flex;
     justify-content: space-evenly;
+  }
+  .cardE {
+    width: 500px;
+    height: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .cardE img {
+    height: 100px;
+    width: 100px;
+    grid: 1;
+    margin: auto;
+  }
+  .cardE div {
+    grid: 1;
   }
 }
