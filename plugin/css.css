@@ -215,19 +215,43 @@ li {
     display: flex;
     justify-content: space-evenly;
   }
-  .cardE {
-    width: 500px;
+
+  .cardE,
+  .cardEv {
+    width: 700px;
     height: 100px;
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  .cardE img {
+  .cardE >img {
     height: 100px;
     width: 100px;
     grid: 1;
+    order: 1;
     margin: auto;
   }
-  .cardE div {
+  .cardE >div {
+    width: 250px;
     grid: 1;
+    order:2;
+    margin-left: auto;
+  }
+  .cardEv >img {
+    height: 100px;
+    width: 100px;
+    grid: 1;
+    order: 2;
+    margin: auto;
+  }
+  .cardEv >div {
+    width: 250px;
+    grid: 1;
+    order:1;
+    margin-left: auto;
+  }
+  .middleLine{
+    position: absolute;
+    height: 500px;
+    border: dotted 1px #333;
   }
 }
