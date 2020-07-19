@@ -220,33 +220,17 @@ li {
   .cardEv {
     width: 700px;
     height: 100px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
   }
-  .cardE >img {
-    height: 100px;
-    width: 100px;
-    grid: 1;
-    order: 1;
+  .s5img {
     margin: auto;
+    padding: 15px;
   }
   .cardE >div {
     width: 250px;
-    grid: 1;
-    order:2;
     margin-left: auto;
-  }
-  .cardEv >img {
-    height: 100px;
-    width: 100px;
-    grid: 1;
-    order: 2;
-    margin: auto;
   }
   .cardEv >div {
     width: 250px;
-    grid: 1;
-    order:1;
     margin-left: auto;
   }
   .middleLine{
@@ -254,4 +238,8 @@ li {
     height: 500px;
     border: dotted 1px #333;
   }
+}
+.footer{
+  width: 100vw;
+  background: linear-gradient(180deg, #FFF, #1e272e);
 }

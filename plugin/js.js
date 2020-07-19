@@ -10,6 +10,9 @@ function toSection4() {
 function toSection5() {
   document.getElementById("section5").scrollIntoView();
 }
+function toFooter() {
+  document.getElementById("footer").scrollIntoView();
+}
 function toTop() {
   $(window).scrollTop(0);
 }
