@@ -1,5 +1,7 @@
 # PHP 資料庫網頁設計 - 網頁動態技術 - 期中作業
 
+#GitPage連結網址：https://jimmyyen67.github.io/WebFrontend_Midterm/
+
 ## 作業內容
 請學員使⽤ Bootstrap 設計個人履歷網站（一頁式亦可），並具備 RWD 響應式網頁效果。完成後需上傳到學員 Github 帳號並開啟 Github Page 功能並且繳交連結網址。
 
